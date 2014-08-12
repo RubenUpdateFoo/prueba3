@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>proyectos Ruben jquery</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/pikachu.js"></script>
+  <script type="text/javascript" src="js/funciones.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+	</head>
+	<body>
+  <div id="contenedor-general">
+  <div id="header" class="clearfix">
+       <div id="logo">
+             <h1 title="bienvenido">Intranet de la Empresa</h1> 
+       </div> <!-- logo -->
+        <ul id="menu">
+			<li><a href="" title="Ir a Inicio" class="active">Inicio</a></li>
+			<li><a href="" title="Ir a Documentos">Documentos</a></li>
+			<li><a href="" title="Ir a Beneficios">Beneficios</a></li>
+			<li><a href="" title="Ir a Sindicato">Sindicato</a></li>
+			<li><a href="" title="Ir a Ayuda">Ayuda</a></li>
+		</ul>
+
+        <ul id="secundario">
+			<li><a href="" title="Mis Datos">Mis Datos</a> |</li>
+			<li><a href="" title="Cerrar Sesión">Cerrar Sesión</a></li>
+		</ul>
+</div> <!-- header y todo lo que es la parte de arriba -->
+
+
+
+
+		<div id="contenido" class="clearfix">
+				<h2>¡Bienvenido a tu Intranet!</h2>
+				<p id="intro">Desde aquí podrás acceder a todos sus <a href="" title="Ir a Documentos">documentos</a>, enterarte sobre actividades del <a href="" title="Ir al Sindicato de Trabajadores">Sindicato de Trabajadores</a>, obtener información sobre <a href="" title="Ir a Beneficios">beneficios</a> y mucho más.</p>
+				<div id="noticias">
+					<h3>Noticias</h3>
+					<div class="noticia">
+						<h4>La imagen se guarda dentro de un Parrafo</h4>
+						<p> <img src="img/enana.jpg" alt="hola soy la enana" title="soy la enana"/>
+						 El Gerente de Marketing de La Empresa S.A. don José Coché, se enorgullese en informar que a contar de hoy todos los funcionarios de La Empresa S.A. podrán ser espiados día y noche gracias a la aplicación de Foursquare. "Podremos conocer su ubicación exacta gracias al GPS de su teléfono" dijo don José en la cena de celebración. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+				</div> <!-- Noticias -->
+			</div> <!-- contenido -->
+
+
+<div id="formulario">
+		<h3>Solicita aumento de sueldo</h3>
+		<form id="form">
+			<p>
+				<label for="nombre" class="titulo">Nombre:</label>
+				<input type="text" id="nombre" placeholder="Ingrese su nombre..." name="nombre" />
+			</p>
+			<p>
+				<label for="edad" class="titulo">edad:</label>
+				<input type="text" id="edad" placeholder="Ingrese su edad..." name="edad" />
+			</p>
+					
+				<h4>¿Cuánto desea aumentar?</h4>
+			<p>	
+				<label for="100" >$100</label>
+				<input type="radio" id="100" name="cuanto" value="100" />
+			</p>
+			<p>	
+				<label for="200">$200</label>
+				<input type="radio" id="200" name="cuanto" value="200" />
+			</p>
+			<p>	
+				<label for="300">$300</label>
+				<input type="radio" id="300" name="cuanto" value="300"/>
+			</p>
+			<p>
+				<label for="justificacion" class="titulo">Justificación:</label>
+				<textarea id="justificacion" name="justificacion"></textarea>
+			</p>
+					
+			<p>
+				<input type="button" value="Solicitar" id="boton"/>
+			</p>
+		 </form>
+
+		    <div id="cargando">
+				<img src="img/cargando.gif" alt="Imagen animada de envío de datos, por favor espere."/>
+		    </div>
+
+			<div id="respuesta">
+				<p>Muchas Gracias, hemos recibido su petición.</p>
+				<p>Pronto le contactaremos.</p>
+			</div>
+
+		</div> <!-- formulario -->
+  </div> <!-- contenedor general-->
+
+  
+  <div id="modal">
+			<div id="mensaje">
+				<p>Esta es mi primera modal a mano.</p>
+				<a title="Cerrar Modal">Cerrar Modal</a>
+			</div>
+		</div>
+
+  
+	</body>
+</html>

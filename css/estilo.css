@@ -1,0 +1,282 @@
+/*cursor: pointer;  cambia flexita 
+ ii tab comentario
+ overflow:hidden;  /*para ocultar  eventuiales scrollbars,
+*/
+body{
+font-family: arial, verdana;
+background-color: black;
+}
+#contenedor-general{
+width:960px;
+margin:0 auto;
+background-color: #ebebeb;
+padding-bottom:20px;
+
+}
+#header{
+width:100%;
+background-color: #41a9f9;
+position: relative;
+}
+#logo{
+width:300px;
+height: 100px;
+float: left;
+}
+#logo h1{
+text-align: center;
+margin-top:50px;
+float: left;
+width: 100%;
+font-size: 18px;
+color:#ffffff;
+}
+
+#header #menu{
+width:500px;
+float: left;
+margin-top:40px;
+}
+/* con esta clase ordenamos hacia el lado */
+#header #menu li{
+float: left;
+margin-right:10px;
+}
+
+#header #menu li a{
+text-decoration:none;
+color:#000000;
+padding:10px 7px;
+display: block;
+}
+
+/*decora todos los a el fondo al pasar el mouse*/
+#header #menu li a:hover{
+background-color:#307ebb;
+color:#ffffff;
+cursor: pointer;
+}
+
+/*coloca en negrita artesanalmente*/
+#header #menu li a.active{
+font-weight: bold;
+}
+
+
+#header #secundario{
+position: absolute;
+right:0;
+top:10px;
+}
+
+#header #secundario li{ /*corremos hacia lado*/
+float: left; 
+color:#f2f8fc;
+margin-left:10px;
+}
+
+#header #secundario li a{ 
+text-decoration: none; /* cancela cualquier decoracion*/
+color:#f2f8fc;
+font-size: 12px;
+margin-right:10px;
+}
+#header #secundario li a:hover{ /*  subrayado*/
+text-decoration:underline;
+}
+
+
+/* SECCION DE NOTICIAS*/
+#contenido{
+width: 100%;
+}
+#contenido h2{
+color:#3c9333;
+padding:20px 0 0 10px;
+font-family: verdana;
+font-size: 16px;
+}
+#contenido p{
+color:#000000;
+font-size: 14px;
+text-align: left;
+padding:10px;
+line-height: 14px;
+}
+#contenido p a{
+color:#2e6cd2;
+}
+
+#noticias{
+width:800px;
+margin:25px auto 25px auto;
+}
+
+h3{
+color:#3c9333;
+font-size: 16px;
+margin-bottom:7px;
+text-transform: uppercase;
+}
+.noticia h4{
+font-size: 16px;
+margin-bottom:10px;
+}
+.noticia img{
+float: left;
+margin:0 10px 10px 0;
+}
+#noticias .noticia p{
+padding: 0;
+line-height: 21px;
+}
+
+
+/*    SECCION DE ABAJO FORM*/
+
+#formulario{
+width:770px;
+margin:0 auto;
+background-color: #b2b2b2;
+padding:15px 15px;
+}
+input{
+border:none;
+border:2px solid purple;
+}
+
+#formulario p{
+margin:10px 0;
+font-size: 14px;
+}
+#formulario h4{
+font-size: 14px;
+font-weight: normal;
+}
+
+#formulario p .titulo{ /*clase titulo sirve de iidentificador*/
+width:50%;
+display:block;
+margin-bottom:4px;
+}
+
+#formulario p textarea{
+width:200px;
+height: 100px;
+border:3px solid #000000;
+background-color: yellow;
+}
+
+#boton{
+	background-color: #41a9f9;
+	color:#ffffff;
+}
+#boton:hover{
+	background-color: #358acb;
+	cursor: pointer;
+}
+
+/*fin de formulario*/
+/* editamos validador */
+label.error{
+	color:red;
+	margin-left: 15px;
+	font-size: 20px;
+}
+input.error{
+	border:solid 2px red;
+}
+input.valid{
+	border:solid 3px green;
+}
+
+
+/*EDITAMOS MODAL*/
+#modal{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	display: none;
+	opacity: 60;
+	background-color: black;
+	background: url(cssimg/modal.png) center top repeat;
+
+}
+
+
+#mensaje{
+	width:400px;
+	margin:100px auto;
+	background-color: #ffffff;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 50px 0;
+	position: relative;
+}
+#mensaje p{
+	text-align: center;
+	font-weight: bold;
+}
+#mensaje a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -100000px;
+	overflow: hidden;
+	
+	position: absolute;
+	right:10px;
+	top:10px;
+	background: url(cssimg/icn-close.png) center top no-repeat;
+	
+}
+#mensaje a:hover{
+	cursor: pointer;
+}
+
+
+
+/* editamos icono de cargar despues de clickear*/
+
+#cargando{
+width: 300px;
+height: 300px;
+margin: 0 auto;
+display: none;
+}
+#respuesta{
+display: none;
+}
+#respuesta p{
+text-align: center;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
